@@ -1,14 +1,7 @@
 import { ApolloServer } from "@apollo/server";
 import { startStandaloneServer } from '@apollo/server/standalone';
 import { typeDefs } from './schema.js';
-import { authors, books } from "./_db.js";
-
-const resolvers = {
-  Query: {
-    books: () => books,
-    authors: () => authors,
-  },
-};
+import { resolvers } from './resolvers.js';
 
 const server = new ApolloServer({
   typeDefs,

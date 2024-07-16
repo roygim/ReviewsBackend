@@ -34,11 +34,13 @@ export const books = [
     {
         id: 5,
         title: 'The Book 2_2',
+        year: 1984,
         author_id: 2,
     },
     {
         id: 6,
         title: 'The Book 2_3',
+        year: 1986,
         author_id: 2,
     }
 ];
